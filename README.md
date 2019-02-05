@@ -6,7 +6,7 @@ Example Apache NiFi to CDSW
 curl -H "Content-Type: application/json" -X POST http://cdsw-hdp-3.vpc.cloudera.com/api/altus-ds-1/models/call-model -d '{"accessKey":"mzpu8j7kav775mkrcw0vug6skqxzcvxz","request":{"sentence":"This is great"}}'
 
 
-### Sample Input
+### Example Input
 
 {
   "sentence": "This is great"
@@ -18,5 +18,20 @@ curl -H "Content-Type: application/json" -X POST http://cdsw-hdp-3.vpc.cloudera.
     "result": "positive"
 }
 
+### Build Script
+
 cdsw-build.sh
+
+
+### File
+
+sentiment.py
+
+### Function
+
+sentiment
+
+### Kernel
+
+Python 3
 
